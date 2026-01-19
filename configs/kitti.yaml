@@ -1,0 +1,11 @@
+## Training
+Open `main_train.ipynb` and run all cells.
+
+## Logging
+Each experiment logs:
+- metrics.json
+- log.csv
+- description.txt
+
+## Citation
+If you use this work, please cite our IEEE STI 2024 paper.
