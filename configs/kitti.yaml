@@ -1,3 +1,4 @@
+data_root: /content/drive/MyDrive/kitti
 ## Training
 Open `main_train.ipynb` and run all cells.
 
@@ -17,5 +18,3 @@ Each experiment logs:
 
 ## Citation
 If you use this work, please cite our IEEE STI 2024 paper.
-
-data_root: /content/kitti
