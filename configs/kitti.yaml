@@ -1,6 +1,14 @@
 ## Training
 Open `main_train.ipynb` and run all cells.
 
+train:
+  batch_size: 8
+  lr: 1e-4
+  epochs: 20
+  num_workers: 4
+
+device: cuda
+
 ## Logging
 Each experiment logs:
 - metrics.json
