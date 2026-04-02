@@ -1,27 +1,71 @@
-# Monocular Metric Depth Estimation on KITTI
+# 📏 MMDE: Monocular Metric Depth Estimation (NYU Depth V2)
 
-This repository is a journal extension of our IEEE STI 2024 conference paper.
-The work upgrades monocular depth estimation to **monocular metric depth estimation (MMDE)** using the KITTI dataset.
+![Status](https://img.shields.io/badge/status-research--prototype-orange)
+![Framework](https://img.shields.io/badge/framework-PyTorch-blue)
+![Model](https://img.shields.io/badge/model-DPT--Hybrid-purple)
+![Task](https://img.shields.io/badge/task-Metric--Depth-green)
+![Dataset](https://img.shields.io/badge/dataset-NYU--Depth--V2-blue)
+![License](https://img.shields.io/badge/license-MIT-lightgrey)
 
-## Key Features
-- Metric depth prediction (meters)
-- KITTI Eigen protocol
-- Deterministic 20% dataset subset
-- Modular PyTorch implementation
-- Full experiment logging (CSV, JSON, TXT)
+---
 
-## Dataset
-KITTI Depth (Eigen split)
+## 🧾 Abstract
 
-Depth scaling:
-## Training
-Open `main_train.ipynb` and run all cells.
+Monocular depth estimation traditionally predicts relative depth, lacking physical interpretability.  
+This project explores Monocular Metric Depth Estimation (MMDE) using the NYU Depth V2 dataset.
 
-## Logging
-Each experiment logs:
-- metrics.json
-- log.csv
-- description.txt
+---
 
-## Citation
-If you use this work, please cite our IEEE STI 2024 paper.
+## 🚀 Introduction
+
+Recovering 3D structure from a single image is inherently ill-posed due to scale ambiguity.
+
+---
+
+## 🧠 Model
+
+- DPT (ViT Hybrid)
+- Multi-scale fusion
+- Dense depth output
+
+---
+
+## 📊 Dataset
+
+NYU Depth V2  
+Indoor RGB-D dataset (0.5m – 10m)
+
+---
+
+## 🔧 Preprocessing
+
+- Depth normalized to [0,1]
+- Invalid masking
+- ImageNet normalization
+
+---
+
+## ⚙️ Training
+
+Run:
+main_train.ipynb
+
+---
+
+## 📈 Metrics
+
+- RMSE
+- AbsRel
+- δ1, δ2, δ3
+
+---
+
+## 📌 Status
+
+Research Prototype
+
+---
+
+## 📄 License
+
+MIT
